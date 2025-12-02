@@ -1,0 +1,148 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/points/index",
+      "style": {
+        "navigationBarTitleText": "积分"
+      }
+    },
+    {
+      "path": "pages/checkin/index",
+      "style": {
+        "navigationBarTitleText": "打卡"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/points/mall",
+      "style": {
+        "navigationBarTitleText": "积分商城"
+      }
+    },
+    {
+      "path": "pages/points/records",
+      "style": {
+        "navigationBarTitleText": "积分明细"
+      }
+    },
+    {
+      "path": "pages/points/orders",
+      "style": {
+        "navigationBarTitleText": "兑换记录"
+      }
+    },
+    {
+      "path": "pages/checkin/create",
+      "style": {
+        "navigationBarTitleText": "创建打卡"
+      }
+    },
+    {
+      "path": "pages/checkin/records",
+      "style": {
+        "navigationBarTitleText": "打卡记录"
+      }
+    },
+    {
+      "path": "pages/meals/index",
+      "style": {
+        "navigationBarTitleText": "健身餐"
+      }
+    },
+    {
+      "path": "pages/meals/detail",
+      "style": {
+        "navigationBarTitleText": "健身餐详情"
+      }
+    },
+    {
+      "path": "pages/referral/index",
+      "style": {
+        "navigationBarTitleText": "推荐好友"
+      }
+    },
+    {
+      "path": "pages/benefits/index",
+      "style": {
+        "navigationBarTitleText": "我的福利"
+      }
+    },
+    {
+      "path": "pages/level/index",
+      "style": {
+        "navigationBarTitleText": "会员等级"
+      }
+    },
+    {
+      "path": "pages/feedback/index",
+      "style": {
+        "navigationBarTitleText": "意见反馈"
+      }
+    },
+    {
+      "path": "pages/brand/index",
+      "style": {
+        "navigationBarTitleText": "品牌介绍"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "RocketBird",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F5F5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF6B35",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/points/index",
+        "iconPath": "static/tabbar/points.png",
+        "selectedIconPath": "static/tabbar/points-active.png",
+        "text": "积分"
+      },
+      {
+        "pagePath": "pages/checkin/index",
+        "iconPath": "static/tabbar/checkin.png",
+        "selectedIconPath": "static/tabbar/checkin-active.png",
+        "text": "打卡"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {}
+  }
+}
