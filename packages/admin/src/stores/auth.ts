@@ -1,12 +1,12 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { IAdminUser } from '@rocketbird/shared';
+import type { AdminUser } from '@rocketbird/shared';
 
 interface AuthState {
   token: string | null;
-  adminInfo: IAdminUser | null;
+  adminInfo: AdminUser | null;
   permissions: string[];
-  login: (data: { token: string; adminInfo: IAdminUser; permissions: string[] }) => void;
+  login: (data: { token: string; adminInfo: AdminUser; permissions: string[] }) => void;
   logout: () => void;
   hasPermission: (permission: string) => boolean;
 }

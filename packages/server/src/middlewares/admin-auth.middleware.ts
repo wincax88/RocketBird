@@ -29,7 +29,7 @@ export const adminAuthMiddleware = async (
     const authHeader = req.headers.authorization;
 
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      return error(res, '未授权访问', 401);
+      return error(res, 401, '未授权访问', 401);
     }
 
     const token = authHeader.substring(7);
@@ -45,7 +45,7 @@ export const adminAuthMiddleware = async (
       req.admin = decoded;
       next();
     } catch (err) {
-      return error(res, 'Token 无效或已过期', 401);
+      return error(res, 401, 'Token 无效或已过期', 401);
     }
   } catch (err) {
     next(err);
@@ -58,7 +58,7 @@ export const adminAuthMiddleware = async (
 export const permissionMiddleware = (requiredPermission: string) => {
   return (req: Request, res: Response, next: NextFunction) => {
     if (!req.admin) {
-      return error(res, '未授权访问', 401);
+      return error(res, 401, '未授权访问', 401);
     }
 
     // 超级管理员拥有所有权限
@@ -67,7 +67,7 @@ export const permissionMiddleware = (requiredPermission: string) => {
     }
 
     if (!req.admin.permissions.includes(requiredPermission)) {
-      return error(res, '没有操作权限', 403);
+      return error(res, 403, '没有操作权限', 403);
     }
 
     next();
