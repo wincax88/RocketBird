@@ -1,0 +1,43 @@
+{
+  "name": "rocketbird",
+  "version": "1.0.0",
+  "description": "集团化运营级会员端 - 打破门店界限，集团直面会员",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "yarn workspace @rocketbird/server dev",
+    "dev:h5": "yarn workspace @rocketbird/member-h5 dev",
+    "dev:admin": "yarn workspace @rocketbird/admin dev",
+    "build:server": "yarn workspace @rocketbird/server build",
+    "build:h5": "yarn workspace @rocketbird/member-h5 build",
+    "build:admin": "yarn workspace @rocketbird/admin build",
+    "build:all": "yarn workspaces run build",
+    "lint": "eslint . --ext .ts,.tsx,.vue",
+    "lint:fix": "eslint . --ext .ts,.tsx,.vue --fix",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,vue,json,css,scss,less}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,scss,less,md}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  }
+}
