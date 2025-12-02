@@ -3,16 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { Table, Card, Input, Button, Space, Tag, Avatar, Select } from 'antd';
 import { SearchOutlined, ExportOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
-import type { IUser } from '@rocketbird/shared';
+import type { User } from '@rocketbird/shared';
 
 const { Search } = Input;
 
 const MemberList = () => {
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(false);
-  const [data, setData] = useState<IUser[]>([]);
+  const [loading] = useState(false);
+  const [data] = useState<User[]>([]);
 
-  const columns: ColumnsType<IUser> = [
+  const columns: ColumnsType<User> = [
     {
       title: '会员',
       dataIndex: 'nickname',

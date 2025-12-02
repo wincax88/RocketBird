@@ -6,7 +6,6 @@ import {
   UserOutlined,
   GiftOutlined,
   CrownOutlined,
-  ShoppingOutlined,
   CheckSquareOutlined,
   HeartOutlined,
   CoffeeOutlined,
