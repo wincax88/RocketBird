@@ -1,3 +1,9 @@
 export * as authApi from './auth';
 export * as pointsApi from './points';
 export * as checkinApi from './checkin';
+export * as mealsApi from './meals';
+export * as levelsApi from './levels';
+export * as benefitsApi from './benefits';
+export * as referralApi from './referral';
+export * as feedbackApi from './feedback';
+export * as brandApi from './brand';
